@@ -1,0 +1,4 @@
+#!/bin/bash
+echo -n "Selgita: "
+read sel
+echo " git commit -m '$sel'"

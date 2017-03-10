@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+#FILE ADD
+echo -n "Faili location ~/github/...: "
+read fileLoc
+if [ fileLoc -ne "-" ]; then
+	git add ~/github/$fileLoc
+else
+	echo "Addisid ise failid: OK"
+fi
+#GIT COMMIT
+echo -n "Selgitus mis tegid: "
+read selgitus
+git commit -m \"$selgitus\"
+echo "Olete ise addinud faili: OK"
+#GIT PUSH
+git push -u origin master
+
