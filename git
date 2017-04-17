@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 #FILE ADD
-echo -n "Faili location ~/github/...: "
+echo -n "Faili location ~/github/"
 read fileLoc
 if [ $fileLoc -ne "-" ]; then
 	git add ~/github/$fileLoc
@@ -16,7 +16,7 @@ git commit -m \"$selgitus\"
 echo "Olete ise addinud faili: OK"
 
 #GIT PUSH
-echo -n "Mis branch'i(repository) see läheb? "
-read branch
-git push -u $branch master
+echo -n "Mis repository'sse see läheb? "
+read repo
+git push -u $repo master
 
